@@ -1,0 +1,76 @@
+@font-face {
+	font-family: Roboto-Bold ;
+	src: url(../fonts/Roboto-Bold.woff2) format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Roboto-Regular ;
+	src: url(../fonts/Roboto-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: rgb(254, 223, 162);
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+  padding-top: 20px;
+}
+
+.container h1 {
+	text-align: center;
+  color: #ff0000;
+  font-family: Roboto-Bold, sans-serif;
+}
+
+.container ol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  font-family: Roboto-Regular, sans-serif;
+}
+
+table {
+	width: 20%;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+/* .total {
+  background-color: #fff;
+  border: 1px solid #000;
+  
+} */
+
+
+th,
+td {
+	border: none;
+	padding: 10px;
+	text-align: center;
+}
+
+.sum {
+	width: 200px;
+}
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.summary input {
+	margin-bottom: 20px;
+}
