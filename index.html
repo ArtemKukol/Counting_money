@@ -9,7 +9,11 @@
 		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/Norm_block_model.css" />
-    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3937-6162-4130-a262-353239616436/____.ico" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="https://static.tildacdn.com/tild3937-6162-4130-a262-353239616436/____.ico"
+			type="image/x-icon"
+		/>
 		<title>Калькулятор купюр</title>
 	</head>
 	<body>
@@ -24,88 +28,100 @@
 				/>
 				<h1>Калькулятор купюр</h1>
 			</div>
-			<ol>
-				<li>Введите сумму из ККМ</li>
-				<li>Введите в поле "Количество" фактическое кол-во купюр или монет</li>
-				<li>В конце подсчёта "Отклонение" должно роняться "0"</li>
-        <li>Для очистки таблицы, перезагрузите страницу</li>
-			</ol>
-			<table>
-				<thead>
-					<tr>
-						<th>Номинал (руб.)</th>
-						<th>Количество</th>
-						<th>Сумма</th>
-					</tr>
-				</thead>
-				<tbody id="bill-table">
-					<tr>
-						<td><input type="number" value="5000" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="2000" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="1000" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="500" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="200" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="100" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="50" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="10" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="5" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="2" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-					<tr>
-						<td><input type="number" value="1" readonly /></td>
-						<td><input type="number" class="count" value="" /></td>
-						<td class="total">0</td>
-					</tr>
-				</tbody>
-			</table>
-			<div class="summary">
-				<p>Общая сумма: <span id="total-sum">0</span> руб.</p>
-				<input
-					type="number"
-					class="sum"
-					id="control-sum"
-					placeholder="Введите сумму из ККМ"
-				/>
-				<p>Отклонение: <span id="deviation">0</span> руб.</p>
+			<div class="wrapper">
+				
+				<div class="table">
+					<table>
+						<thead>
+							<tr>
+								<th>Номинал (руб.)</th>
+								<th>Количество</th>
+								<th>Сумма</th>
+							</tr>
+						</thead>
+						<tbody id="bill-table">
+							<tr>
+								<td><input type="number" value="5000" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="2000" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="1000" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="500" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="200" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="100" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="50" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="10" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="5" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="2" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+							<tr>
+								<td><input type="number" value="1" readonly /></td>
+								<td><input type="number" class="count" value="" /></td>
+								<td class="total">0</td>
+							</tr>
+						</tbody>
+					</table>
+          <div class="summary">
+            <p>Общая сумма: <span id="total-sum">0</span> руб.</p>
+            <input
+              type="number"
+              class="sum"
+              id="control-sum"
+              placeholder="Введите сумму из ККМ"
+            />
+            <p>Отклонение: <span id="deviation">0</span> руб.</p>
+          </div>
+				</div>
+        <div class="wrapper__text">
+					<ol>
+						<li>Введите сумму из ККМ</li>
+						<li>
+							Введите в поле "Количество" фактическое кол-во купюр или монет
+						</li>
+						<li>В конце подсчёта, "Отклонение" должно роняться "0"</li>
+						<li>Для очистки таблицы, перезагрузите страницу</li>
+					</ol>
+				</div>
+        
 			</div>
+
+			
 		</div>
 		<script src="./js/script.js"></script>
 	</body>
