@@ -57,6 +57,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.wrapper__text ol li:last-child {
+  margin-bottom: 0;
+}
+
 table {
 	width: 20%;
 	border-collapse: collapse;
